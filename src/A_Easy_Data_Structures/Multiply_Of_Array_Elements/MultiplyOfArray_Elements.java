@@ -1,4 +1,4 @@
-package week_22_TicketingREST;
+package A_Easy_Data_Structures.Multiply_Of_Array_Elements;
 
 import java.util.Arrays;
 

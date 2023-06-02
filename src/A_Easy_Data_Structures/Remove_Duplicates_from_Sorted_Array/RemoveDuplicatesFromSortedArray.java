@@ -1,4 +1,4 @@
-package Remove_Duplicates_from_Sorted_Array;
+package A_Easy_Data_Structures.Remove_Duplicates_from_Sorted_Array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

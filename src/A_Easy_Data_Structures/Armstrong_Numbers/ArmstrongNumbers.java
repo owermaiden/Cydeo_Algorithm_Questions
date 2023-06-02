@@ -1,4 +1,4 @@
-package z_questions;
+package A_Easy_Data_Structures.Armstrong_Numbers;
 
 import java.util.Scanner;
 

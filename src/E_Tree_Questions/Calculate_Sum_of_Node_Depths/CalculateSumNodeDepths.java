@@ -1,6 +1,22 @@
-package D_LinkedList_Questions.Calculate_Sum_of_Node_Depths;
+package E_Tree_Questions.Calculate_Sum_of_Node_Depths;
+
+import E_Tree_Questions.TreeNode;
+import E_Tree_Questions.VisualizeTree;
 
 public class CalculateSumNodeDepths {
+
+    public static void main(String[] args) {
+
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(7);
+        root.right.right = new TreeNode(18);
+
+        System.out.println(CalculateSumNodeDepth(root));
+        VisualizeTree.printTree(root, null, false);
+    }
 
     public static int CalculateSumNodeDepth(TreeNode root) {
 
@@ -15,22 +31,3 @@ public class CalculateSumNodeDepths {
 
 }
 
-class TreeNode {
-
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    public TreeNode() {
-    }
-
-    public TreeNode(int val) {
-        this.val = val;
-    }
-
-    public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}

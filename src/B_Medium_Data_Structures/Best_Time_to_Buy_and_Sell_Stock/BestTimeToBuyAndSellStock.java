@@ -1,4 +1,4 @@
-package A_Easy_Data_Structures.Best_Time_to_Buy_and_Sell_Stock;
+package B_Medium_Data_Structures.Best_Time_to_Buy_and_Sell_Stock;
 
 public class BestTimeToBuyAndSellStock {
     /*

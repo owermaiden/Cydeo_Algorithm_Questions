@@ -1,4 +1,7 @@
-package Remove_Dublicates_From_LinkedList;
+package D_LinkedList_Questions.Remove_Dublicates_From_LinkedList;
+
+import D_LinkedList_Questions.ListNode;
+import D_LinkedList_Questions.MyLinkedList;
 
 import java.util.stream.Stream;
 

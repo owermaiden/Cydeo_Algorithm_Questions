@@ -1,4 +1,4 @@
-package z_questions;
+package B_Medium_Data_Structures.Final_Balance;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Q3_FinalBalance {
+public class FinalBalance {
 
     public int solution(int[] A, String[] D) {
 

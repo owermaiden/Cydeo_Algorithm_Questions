@@ -1,4 +1,6 @@
-package week_20_search_algorithms_spring_rest;
+package E_Tree_Questions.Same_Tree;
+import E_Tree_Questions.TreeNode;
+import E_Tree_Questions.VisualizeTree;
 
 import java.util.ArrayDeque;
 
@@ -43,9 +45,12 @@ https://leetcode.com/problems/same-tree/
         secondTreeRoot.left.left = new TreeNode(3);
         secondTreeRoot.left.right = new TreeNode(5);
 
+        VisualizeTree.printTree(firstTreeRoot, null, false);
+
         System.out.println(withRecursion(null, null));
         System.out.println(withRecursion(firstTreeRoot, secondTreeRoot));
         System.out.println(withIteration(firstTreeRoot, secondTreeRoot));
+        VisualizeTree.printTree(secondTreeRoot, null, false);
 
 
     }
@@ -102,22 +107,4 @@ https://leetcode.com/problems/same-tree/
         return true;
     }
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }

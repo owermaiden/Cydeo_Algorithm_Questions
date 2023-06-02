@@ -1,11 +1,11 @@
-package E_Tree_Questions.Symmetric_Tree_LC_Easy;
+package E_Tree_Questions.Symmetric_Tree;
 
 import E_Tree_Questions.TreeNode;
 import E_Tree_Questions.VisualizeTree;
 
 import java.util.Stack;
 
-public class SymmetricTree_LC_Easy {
+public class SymmetricTree {
     /*
     101. Symmetric Tree
     Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
@@ -38,6 +38,7 @@ Follow up: Could you solve it both recursively and iteratively?
         root.left.right = new TreeNode(3);
         root.right.left = new TreeNode(3);
         System.out.println(isSymmetric(root));
+        VisualizeTree.printTree(root, null, false);
     }
 
 

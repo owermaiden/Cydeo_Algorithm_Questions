@@ -1,4 +1,4 @@
-package First_Nonrepeating_Vowel;
+package A_Easy_Data_Structures.First_Nonrepeating_Vowel;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

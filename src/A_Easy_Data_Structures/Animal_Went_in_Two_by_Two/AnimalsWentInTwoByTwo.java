@@ -1,4 +1,4 @@
-package Animal_Went_in_Two_by_Two;
+package A_Easy_Data_Structures.Animal_Went_in_Two_by_Two;
 
 import java.util.*;
 

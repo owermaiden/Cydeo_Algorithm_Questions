@@ -1,8 +1,8 @@
-package week_23_AOP_testingAsiya;
+package C_Hard_Data_Structures.Continuous_Sequence_Of_Integers_With_Largest_Sum;
 
 import java.util.Scanner;
 
-public class Q22_ContinuousSequenceOfIntegersWithLargestSum {
+public class ContinuousSequenceOfIntegersWithLargestSum {
 
     /*
      * inputArr, represents the array with inputArr_size (N) elements.

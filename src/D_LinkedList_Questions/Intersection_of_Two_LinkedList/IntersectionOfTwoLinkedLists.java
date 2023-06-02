@@ -1,4 +1,7 @@
-package week_16_Queing_Hashing_TicketingORMpart2;
+package D_LinkedList_Questions.Intersection_of_Two_LinkedList;
+
+import D_LinkedList_Questions.ListNode;
+import D_LinkedList_Questions.MyLinkedList;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,7 @@
-package week_21_SpringRestSecurity;
+package E_Tree_Questions.Range_Sum_of_BST;
+
+import E_Tree_Questions.TreeNode;
+import E_Tree_Questions.VisualizeTree;
 
 import java.util.LinkedList;
 
@@ -37,6 +40,7 @@ Constraints:
         root.left.right = new TreeNode(7);
         root.right.right = new TreeNode(18);
 
+        VisualizeTree.printTree(root, null, false);
         System.out.println(rangeSumBST(root,7,15));
         System.out.println(rangeSumBSTWithStack(root,7,15));
 
@@ -129,22 +133,4 @@ Constraints:
         return result;
     }
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }

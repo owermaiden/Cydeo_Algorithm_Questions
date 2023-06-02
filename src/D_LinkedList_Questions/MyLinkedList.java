@@ -1,10 +1,10 @@
-package D_LinkedList_Questions.Remove_LinkedList_Elements;
+package D_LinkedList_Questions;
 
-class MyLinkedList {
-    ListNode head;
-    ListNode tail;
+public class MyLinkedList {
+    public ListNode head;
+    public ListNode tail;
 
-    void add(int n) {
+    public void add(int n) {
         ListNode newNode = new ListNode(n);
         if (head == null){
             head = tail = newNode;

@@ -1,10 +1,10 @@
-package week_22_TicketingREST;
+package C_Hard_Data_Structures.Pilot_Drop_Food_To_Coordinates;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Q24_PilotDropFoodToCoordinates {
+public class PilotDropFoodToCoordinates {
 
     /*
  * xCoordinate, represents the N coordinates on x-axis.

@@ -1,4 +1,4 @@
-package week_15_DSA_probSolving_TicketingORMpart1;
+package F_Recursion_Questions.Climbing_Stairs;
 
 import java.util.HashMap;
 import java.util.Map;

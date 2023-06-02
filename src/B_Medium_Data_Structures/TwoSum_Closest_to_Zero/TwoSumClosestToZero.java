@@ -1,4 +1,4 @@
-package z_questions;
+package B_Medium_Data_Structures.TwoSum_Closest_to_Zero;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package week_13_Stack_Recursion_ORMpart1;
+package F_Recursion_Questions.Happy_Number;
 
 import java.util.HashSet;
 import java.util.Set;

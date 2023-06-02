@@ -1,6 +1,6 @@
-package z_questions;
+package A_Easy_Data_Structures.Reverse_String;
 
-public class ReverseString_LC_Easy {
+public class ReverseString {
     /*
     344. Reverse String
 Write a function that reverses a string. The input string is given as an array of characters s.

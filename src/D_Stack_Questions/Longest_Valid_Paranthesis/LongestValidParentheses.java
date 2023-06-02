@@ -1,4 +1,4 @@
-package A_Easy_Data_Structures.Longest_Valid_Paranthesis;
+package D_Stack_Questions.Longest_Valid_Paranthesis;
 
 import java.util.LinkedList;
 import java.util.Stack;

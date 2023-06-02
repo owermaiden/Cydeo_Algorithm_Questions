@@ -1,4 +1,7 @@
-package week_14_ORMpart2;
+package D_LinkedList_Questions.Palindrome_LinkedList;
+
+import D_LinkedList_Questions.ListNode;
+import D_LinkedList_Questions.MyLinkedList;
 
 import java.util.Deque;
 import java.util.LinkedList;

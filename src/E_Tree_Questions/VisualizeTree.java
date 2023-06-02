@@ -1,4 +1,4 @@
-package E_Tree_Questions.lowest_common_ancestor_of_BST;
+package E_Tree_Questions;
 
 public class VisualizeTree {
     public  static void printTree(TreeNode root, Trunk prev, boolean isLeft)

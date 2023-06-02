@@ -1,4 +1,4 @@
-package Missing_Number;
+package A_Easy_Data_Structures.Missing_Number;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

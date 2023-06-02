@@ -1,4 +1,4 @@
-package week_21;
+package B_Medium_Data_Structures.Convert_Frequency_Of_Each_Element_To_English_Word;
 
 import java.util.Arrays;
 import java.util.HashMap;

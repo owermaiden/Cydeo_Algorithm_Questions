@@ -1,4 +1,4 @@
-package Move_Zeros_to_End;
+package A_Easy_Data_Structures.Move_Zeros_to_End;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Find_Factorial;
+package A_Easy_Data_Structures.Find_Factorial;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

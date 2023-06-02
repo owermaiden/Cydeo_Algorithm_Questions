@@ -1,4 +1,4 @@
-package Array_of_Digits;
+package A_Easy_Data_Structures.Array_of_Digits;
 
 import java.util.Arrays;
 

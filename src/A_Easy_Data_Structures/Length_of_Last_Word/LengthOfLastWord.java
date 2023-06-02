@@ -1,4 +1,4 @@
-package Length_of_Last_Word;
+package A_Easy_Data_Structures.Length_of_Last_Word;
 
 public class LengthOfLastWord {
     /*

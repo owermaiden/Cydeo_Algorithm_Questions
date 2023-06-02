@@ -1,4 +1,4 @@
-package week_20_search_algorithms_spring_rest;
+package C_Hard_Data_Structures.Distance_Calculator;
 
 import java.io.File;
 import java.io.FileNotFoundException;

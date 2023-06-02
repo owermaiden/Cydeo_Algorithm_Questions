@@ -1,19 +1,19 @@
-package D_LinkedList_Questions.Remove_LinkedList_Elements;
+package D_LinkedList_Questions;
 
-class ListNode {
+public class ListNode {
     public int val;
     public ListNode next;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
 
-    void printList() {
+    public void printList() {
         ListNode current = this;
         while (current != null) {
             System.out.print(current.val + " -> ");

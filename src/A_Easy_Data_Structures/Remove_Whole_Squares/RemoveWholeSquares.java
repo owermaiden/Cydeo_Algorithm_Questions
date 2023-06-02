@@ -1,10 +1,10 @@
-package z_questions;
+package A_Easy_Data_Structures.Remove_Whole_Squares;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Q2_RemoveWholeSquares {
+public class RemoveWholeSquares {
     /*
    Remove whole squares
 

@@ -1,4 +1,4 @@
-package z_questions;
+package D_Queue_Dequeue_Questions.Time_Needed_to_Buy_Ticket;
 
 
 import java.util.*;

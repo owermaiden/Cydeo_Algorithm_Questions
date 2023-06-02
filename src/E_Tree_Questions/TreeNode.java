@@ -1,11 +1,12 @@
-package E_Tree_Questions.lowest_common_ancestor_of_BST;
+package E_Tree_Questions;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    public TreeNode(int x) {
         val = x;
     }
 }

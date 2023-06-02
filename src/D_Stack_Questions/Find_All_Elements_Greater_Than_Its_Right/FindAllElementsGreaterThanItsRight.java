@@ -1,7 +1,6 @@
-package week_14_ORMpart2;
+package D_Stack_Questions.Find_All_Elements_Greater_Than_Its_Right;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class FindAllElementsGreaterThanItsRight {

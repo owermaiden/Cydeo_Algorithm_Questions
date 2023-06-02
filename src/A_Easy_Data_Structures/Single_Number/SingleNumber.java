@@ -1,4 +1,4 @@
-package week_26;
+package A_Easy_Data_Structures.Single_Number;
 
 import java.util.ArrayList;
 import java.util.HashSet;

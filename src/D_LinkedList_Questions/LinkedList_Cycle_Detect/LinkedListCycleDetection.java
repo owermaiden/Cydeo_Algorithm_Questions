@@ -1,4 +1,7 @@
-package week_15_DSA_probSolving_TicketingORMpart1;
+package D_LinkedList_Questions.LinkedList_Cycle_Detect;
+
+import D_LinkedList_Questions.ListNode;
+import D_LinkedList_Questions.MyLinkedList;
 
 import java.util.HashSet;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package Find_Max_From_Array;
+package A_Easy_Data_Structures.Find_Max_From_Array;
 
 import java.util.Arrays;
 

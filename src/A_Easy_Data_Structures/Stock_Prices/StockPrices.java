@@ -1,6 +1,6 @@
-package z_questions;
+package A_Easy_Data_Structures.Stock_Prices;
 
-public class Q21_StockPrices {
+public class StockPrices {
         /*
     Given an array that represents the stock prices of consecutive months and analysis factor k
 find how many periods where stocks prices are strictly increasing , the period should be of k getLength

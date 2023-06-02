@@ -1,14 +1,7 @@
-package A_Easy_Data_Structures.Excel_Sheet_Column_Number;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+package B_Medium_Data_Structures.Excel_Sheet_Column_Number;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class ExcelSheetColumnNumber {
     /*
@@ -89,35 +82,6 @@ leetcode link : https://leetcode.com/problems/excel-sheet-column-number/
         }
 
         return result;
-    }
-
-    @Test
-    public void forLoopStartingFromEnd_Test(){
-        Assertions.assertEquals(1, forLoopStartingFromEnd("A"));
-        Assertions.assertEquals(28, forLoopStartingFromEnd("AB"));
-        Assertions.assertEquals(701, forLoopStartingFromEnd("ZY"));
-        Assertions.assertEquals(2147483647, forLoopStartingFromEnd("FXSHRXW"));
-    }
-
-    public static Stream<Arguments> inputs(){
-        return Stream.of(
-                arguments(1, "A"),
-                arguments(28, "AB"),
-                arguments(701, "ZY"),
-                arguments(2147483647, "FXSHRXW")
-        );
-    }
-
-    @ParameterizedTest
-    @MethodSource(value = "inputs")
-    public void forLoopStartingFromEnd_Test(int expected, String input){
-        Assertions.assertEquals(expected, forLoopStartingFromEnd(input));
-    }
-
-    @ParameterizedTest
-    @MethodSource(value = "inputs")
-    public void forLoopStartingFromBeginning_Test(int expected, String input){
-        Assertions.assertEquals(expected, forLoopFromBeginning(input));
     }
 
 

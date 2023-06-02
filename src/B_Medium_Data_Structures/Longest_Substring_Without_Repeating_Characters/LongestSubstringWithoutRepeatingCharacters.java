@@ -1,6 +1,9 @@
-package week_19_api;
+package B_Medium_Data_Structures.Longest_Substring_Without_Repeating_Characters;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 

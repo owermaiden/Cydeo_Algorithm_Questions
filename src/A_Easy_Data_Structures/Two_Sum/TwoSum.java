@@ -1,4 +1,4 @@
-package Two_Sum;
+package A_Easy_Data_Structures.Two_Sum;
 
 import java.util.*;
 

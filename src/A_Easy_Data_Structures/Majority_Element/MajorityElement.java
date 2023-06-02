@@ -1,10 +1,10 @@
-package z_questions;
+package A_Easy_Data_Structures.Majority_Element;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MajorityElement_LC_easy {
+public class MajorityElement {
     /*
     169. Majority Element
     https://leetcode.com/problems/majority-element/

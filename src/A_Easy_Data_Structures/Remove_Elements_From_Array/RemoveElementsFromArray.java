@@ -1,4 +1,4 @@
-package z_questions;
+package A_Easy_Data_Structures.Remove_Elements_From_Array;
 
 public class RemoveElementsFromArray {
     /*

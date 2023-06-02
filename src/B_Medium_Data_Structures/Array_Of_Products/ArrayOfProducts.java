@@ -1,8 +1,6 @@
-package week_24;
+package B_Medium_Data_Structures.Array_Of_Products;
 
 import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
 
 public class ArrayOfProducts {
 

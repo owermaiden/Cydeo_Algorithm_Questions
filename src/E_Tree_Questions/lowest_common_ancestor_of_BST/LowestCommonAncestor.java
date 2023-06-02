@@ -1,4 +1,7 @@
-package week_17_Trees_TicketingSecurity.lowest_common_ancestor_of_BST;
+package E_Tree_Questions.lowest_common_ancestor_of_BST;
+
+import E_Tree_Questions.TreeNode;
+import E_Tree_Questions.VisualizeTree;
 
 /*
     Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.

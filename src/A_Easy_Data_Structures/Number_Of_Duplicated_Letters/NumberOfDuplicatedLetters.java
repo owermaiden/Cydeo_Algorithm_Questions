@@ -1,4 +1,4 @@
-package Number_Of_Duplicated_Letters;
+package A_Easy_Data_Structures.Number_Of_Duplicated_Letters;
 
 /*
 Problem : Count the number of Duplicated Letters

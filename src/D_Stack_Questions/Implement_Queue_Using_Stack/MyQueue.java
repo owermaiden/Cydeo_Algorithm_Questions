@@ -1,4 +1,4 @@
-package week_16_Queing_Hashing_TicketingORMpart2;
+package D_Stack_Questions.Implement_Queue_Using_Stack;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package Valid_Palindrome;
+package A_Easy_Data_Structures.Valid_Palindrome;
 
 public class ValidPalindrome {
     /*

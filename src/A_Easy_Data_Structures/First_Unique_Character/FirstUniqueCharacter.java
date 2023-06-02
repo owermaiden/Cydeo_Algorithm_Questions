@@ -1,4 +1,4 @@
-package First_Unique_Character;
+package A_Easy_Data_Structures.First_Unique_Character;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package week_21_SpringRestSecurity;
+package A_Easy_Data_Structures.Sum_of_Digits;
 
 import java.util.Arrays;
 

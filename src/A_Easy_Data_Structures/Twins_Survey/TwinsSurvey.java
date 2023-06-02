@@ -1,10 +1,10 @@
-package z_questions;
+package A_Easy_Data_Structures.Twins_Survey;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Q23_TwinsSurvey {
+public class TwinsSurvey {
 
     /*
      * inputArr, represents the given array of element of size inputArr_size.

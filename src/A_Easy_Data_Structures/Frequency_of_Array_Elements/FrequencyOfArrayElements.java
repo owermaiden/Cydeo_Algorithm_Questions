@@ -1,4 +1,4 @@
-package Frequency_of_Array_Elements;
+package A_Easy_Data_Structures.Frequency_of_Array_Elements;
 
 import java.util.Arrays;
 import java.util.HashMap;

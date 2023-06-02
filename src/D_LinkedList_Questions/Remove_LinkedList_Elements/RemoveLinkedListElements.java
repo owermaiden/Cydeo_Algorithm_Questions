@@ -1,4 +1,7 @@
-package week_13_Stack_Recursion_ORMpart1;
+package D_LinkedList_Questions.Remove_LinkedList_Elements;
+
+import D_LinkedList_Questions.ListNode;
+import D_LinkedList_Questions.MyLinkedList;
 
 import java.util.stream.Stream;
 

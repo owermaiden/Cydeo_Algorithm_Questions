@@ -1,4 +1,4 @@
-package week_22_TicketingREST;
+package C_Hard_Data_Structures.Frequency_of_Words_Regex;
 
 import java.util.Arrays;
 import java.util.HashMap;

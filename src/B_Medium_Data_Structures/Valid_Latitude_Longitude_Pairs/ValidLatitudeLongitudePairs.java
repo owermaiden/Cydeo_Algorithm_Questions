@@ -1,4 +1,4 @@
-package z_questions;
+package B_Medium_Data_Structures.Valid_Latitude_Longitude_Pairs;
 /*
 Write an algorithm to identify the valid and invalid lattitide/longtitude pairs from the given list of the strings.
 Input:
@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StringTest {
+public class ValidLatitudeLongitudePairs {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package Animal_Feast;
+package A_Easy_Data_Structures.Animal_Feast;
 
 /*
 All the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and

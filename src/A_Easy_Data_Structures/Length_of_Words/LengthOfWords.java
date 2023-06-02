@@ -1,4 +1,4 @@
-package Length_of_Words;
+package A_Easy_Data_Structures.Length_of_Words;
 
 import java.util.Arrays;
 import java.util.List;

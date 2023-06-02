@@ -1,6 +1,6 @@
-package week_19_api;
+package B_Medium_Data_Structures.Maximum_Sum_of_K_Consecutive_Elements;
 
-public class SlidingWindowSample {
+public class MaximumSumofKConsecutiveElements {
 
     /*
     The problem gives us an array of length n and a number k. The problem asks us to find the maximum sum of k

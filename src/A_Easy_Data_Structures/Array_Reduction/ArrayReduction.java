@@ -4,6 +4,36 @@ import java.util.*;
 
 public class ArrayReduction {
 
+    /*
+    There is an array of n integers called num. The array
+can be reduced by 7 element by performing a move.
+Each move consists of the following three steps:
+
+1. Pick two different elements num(ijand num[j, i # j.
+2. Remove the two selected elements from the array.
+
+3. Add the sum of the two selected elements to the end
+of the array.
+
+Each move has a cost associated with it: the sum of
+the two elements removed from the array during the
+move. Calculate the minimum total cost of reducing
+the array to one element.
+
+Example
+num = [4,6,8]
+
+Remove 4 and 6in the first move ata cost of 4 +6 =
+10, and the resultant array is num’ = [8,10].
+
+Remove 8and 70in the second move at a cost of 8 +
+10 = 18, and the resultant array is num" = [18].
+
+The total cost of reducing this array to one element
+using this sequence of moves is 70 + 18 = 28. This is
+just one set of possible moves.
+     */
+
     public static void main(String[] args) {
         int[] num1 = {4, 6, 8 }; // Example input array
         List<Integer> num = new ArrayList<>(Arrays.asList(4,6,8));

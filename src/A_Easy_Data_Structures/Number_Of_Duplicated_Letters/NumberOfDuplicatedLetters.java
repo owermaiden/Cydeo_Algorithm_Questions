@@ -25,6 +25,7 @@ class NumberOfDuplicatedLetters {
 
     public static int getNumber5(String str) {
         String[] ch = str.toLowerCase().split("");
+//        char[] ch1 = str.toLowerCase().toCharArray();
         String newString = "";
         for (String each : ch) {    //compare each
             int counter = 0;
@@ -72,21 +73,22 @@ class NumberOfDuplicatedLetters {
         return map.size();
     }
 
-    public static int getNumber4(String str) {
-        str = str.toLowerCase();
-        String temp = "";
-        String output = "";
-        for (Character ch : str.toCharArray()) {
-            if (!temp.contains(ch + "")) {
-                temp += ch;
-            } else if (!output.contains(ch + "")) {
-                output += ch;
-            }
-        }
-        return output.length();
-    }
+//    public static int getNumber4(String str) {
+//        str = str.toLowerCase();
+//        String temp = "";
+//        String output = "";
+//        for (Character ch : str.toCharArray()) {
+//            if (!temp.contains(ch + "")) {
+//                temp += ch;
+//            } else if (!output.contains(ch + "")) {
+//                output += ch;
+//            }
+//        }
+//        return output.length();
+//    }
 
     public static int getNumber(String str) {
+
         return (int) str.toLowerCase().chars()
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(Function.identity(), HashMap::new, Collectors.counting()))

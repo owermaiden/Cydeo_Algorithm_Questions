@@ -17,10 +17,10 @@ public class MultiplyOfArray_Elements {
     public static void main(String[] args) {
 //        System.out.println(Arrays.toString(multiplyElements(new int[]{2, 3, 4, 5, 6})));
 //        System.out.println(Arrays.toString(multiplyElements(new int[]{2, 3})));
-        System.out.println(Arrays.toString(multiplyElements(new int[]{2})));
+//        System.out.println(Arrays.toString(multiplyElements(new int[]{2})));
 //        System.out.println(Arrays.toString(multiplyElements(new int[]{})));
 //        System.out.println(Arrays.toString(multiplyElements(null)));
-//        System.out.println(Arrays.toString(multiplyElements2(new int[]{2, 3, 4, 5, 6})));
+        System.out.println(Arrays.toString(multiplyElements(new int[]{2, 3, 4, 5, 6})));
 //        System.out.println(Arrays.toString(multiplyElements2(new int[]{2})));
 //        System.out.println(Arrays.toString(multiplyElements2(null)));
     }

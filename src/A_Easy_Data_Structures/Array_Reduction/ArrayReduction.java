@@ -30,13 +30,13 @@ Remove 8and 70in the second move at a cost of 8 +
 10 = 18, and the resultant array is num" = [18].
 
 The total cost of reducing this array to one element
-using this sequence of moves is 70 + 18 = 28. This is
+using this sequence of moves is 10 + 18 = 28. This is
 just one set of possible moves.
      */
 
     public static void main(String[] args) {
-        int[] num1 = {4, 6, 8 }; // Example input array
-        List<Integer> num = new ArrayList<>(Arrays.asList(4,6,8));
+        int[] num1 = {2,3,4,6,8, 10 }; // Example input array
+        List<Integer> num = new ArrayList<>(Arrays.asList(2,3,4,6,8, 10));
         int minimumCost = minimumTotalCost(num);
         int minimumCost2 = minimumTotalCost(num1);
         System.out.println("Minimum total cost: " + minimumCost);
@@ -84,5 +84,6 @@ just one set of possible moves.
 
         return cost;
     }
+
 
 }

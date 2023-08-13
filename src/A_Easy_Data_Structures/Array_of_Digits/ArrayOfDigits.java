@@ -1,6 +1,7 @@
 package A_Easy_Data_Structures.Array_of_Digits;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 public class ArrayOfDigits {
     /*
@@ -13,7 +14,7 @@ public class ArrayOfDigits {
         try {
             System.out.println(Arrays.toString(getDigits(String.valueOf(490))));
             System.out.println(Arrays.toString(getDigits(String.valueOf(0))));
-            System.out.println(Arrays.toString(getDigits(String.valueOf(-5)+"o")));
+            System.out.println(Arrays.toString(getDigits(String.valueOf(-5))));
             System.out.println(Arrays.toString(getDigits(null)));
         } catch (Exception e){
             System.err.println(e.getMessage());
@@ -22,12 +23,12 @@ public class ArrayOfDigits {
     }
 
     static int[] getDigits(String str) {
-        Integer number = Integer.parseInt(str);
-        if (number == null || number < 0)
+        var number = Optional.ofNullable(Integer.parseInt(str)).orElseThrow(() -> new IllegalArgumentException("message")); // Just check
+        if (number < 0)
             throw new IllegalArgumentException("input should not be null or negative integer");
         char[] chars = Integer.toString(number).toCharArray();
         int[] ints = new int[chars.length];
-        for (int i = 0; i < chars.length; i++) {
+        for (int i = 0; i < chars.length; i++) { // -   5
             ints[i] = chars[i] - '0';
         }
         return ints;

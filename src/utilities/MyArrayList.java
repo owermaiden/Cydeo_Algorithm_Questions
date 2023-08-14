@@ -1,6 +1,8 @@
 package utilities;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class MyArrayList<T> {
     private static final int DEFAULT_CAPACITY = 10;
@@ -51,6 +53,7 @@ public class MyArrayList<T> {
 
     public static void main(String[] args) {
         MyArrayList<Integer> list = new MyArrayList<>();
+        List<Integer> myList = new ArrayList<>(10);
 
         list.add(10);
         list.add(20);

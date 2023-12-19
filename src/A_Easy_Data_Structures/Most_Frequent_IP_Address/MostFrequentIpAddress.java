@@ -9,11 +9,18 @@ public class MostFrequentIpAddress {
     public static void main(String[] args) {
         System.out.println("Most Frequent IP!");
 
-        getMostFrequentIp(new String[]{"10.0.0.1 - GET 2020-08-24", "10.0.0.1 - GET 2020-08-24", "10.0.0.2 - GET 2020-08-20", "10.0.0.3 - GET 2020-08-24","10.0.0.3 - GET 2020-08-24","10.0.0.3 - GET 2020-08-24","10.0.0.4 - GET 2020-08-24",});
+        getMostFrequentIp(new String[]{"10.0.0.1 - GET 2020-08-24",
+                                        "10.0.0.1 - GET 2020-08-24",
+                                        "10.0.0.2 - GET 2020-08-20",
+                                        "10.0.0.3 - GET 2020-08-24",
+                                        "10.0.0.3 - GET 2020-08-24",
+                                        "10.0.0.3 - GET 2020-08-24",
+                                        "10.0.0.4 - GET 2020-08-24",
+        });
     }
 
     public static void getMostFrequentIp(String[] logs){
-        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>(); // O(1)
 
         for(String log : logs){
             String[] arr = log.split(" ");

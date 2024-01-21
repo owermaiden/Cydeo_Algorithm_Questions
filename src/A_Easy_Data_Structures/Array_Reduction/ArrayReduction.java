@@ -43,7 +43,7 @@ just one set of possible moves.
         System.out.println("Minimum total cost: " + minimumCost2);
     }
 
-    public static int minimumTotalCost(List<Integer> num) {
+    public static int minimumTotalCost(List<Integer> num) {  // n(log n)
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
         for (int n : num) {

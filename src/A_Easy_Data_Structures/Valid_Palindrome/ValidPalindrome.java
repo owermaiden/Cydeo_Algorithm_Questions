@@ -1,6 +1,7 @@
 package A_Easy_Data_Structures.Valid_Palindrome;
 
 public class ValidPalindrome {
+
     /*
     125. Valid Palindrome
     Determine whether a string is a palindrome, ignoring non-alphanumeric characters and case.

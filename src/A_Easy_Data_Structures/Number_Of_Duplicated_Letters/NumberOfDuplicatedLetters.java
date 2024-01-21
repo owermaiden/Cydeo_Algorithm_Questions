@@ -73,21 +73,21 @@ class NumberOfDuplicatedLetters {
         return map.size();
     }
 
-//    public static int getNumber4(String str) {
-//        str = str.toLowerCase();
-//        String temp = "";
-//        String output = "";
-//        for (Character ch : str.toCharArray()) {
-//            if (!temp.contains(ch + "")) {
-//                temp += ch;
-//            } else if (!output.contains(ch + "")) {
-//                output += ch;
-//            }
-//        }
-//        return output.length();
-//    }
+    public static int getNumber4(String str) {
+        str = str.toLowerCase();
+        String temp = "";
+        String output = "";
+        for (Character ch : str.toCharArray()) {
+            if (!temp.contains(ch + "")) {
+                temp += ch;
+            } else if (!output.contains(ch + "")) {
+                output += ch;
+            }
+        }
+        return output.length();
+    }
 
-    public static int getNumber(String str) {
+    public static int getNumber(String str) { // Lambda Functions
 
         return (int) str.toLowerCase().chars()
                 .mapToObj(c -> (char) c)
@@ -98,7 +98,7 @@ class NumberOfDuplicatedLetters {
     }
 
     public static void main(String[] args) {
-        System.out.println(getNumber("abcde") == 0);
+        System.out.println(getNumber4("abcde") == 0);
         System.out.println(getNumber("aabbcde") == 2);
         System.out.println(getNumber("aabBcde") == 2);
         System.out.println(getNumber("indivisibility") == 1);

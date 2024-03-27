@@ -15,12 +15,12 @@ class JadenCase {
         if (phrase == null || phrase.isEmpty()) {
             return "";
         }
-        String result = "";
+        StringBuilder result = new StringBuilder();
         String[] strings = phrase.split(" ");
         for (String str : strings) {
-            result += (str.charAt(0) + "").toUpperCase() + str.substring(1) + " ";
+            result.append((str.charAt(0) + "").toUpperCase()).append(str.substring(1)).append(" ");
         }
-        return result.trim();
+        return result.toString().trim();
     }
 
     private static String toJadenCase2(String phrase) {

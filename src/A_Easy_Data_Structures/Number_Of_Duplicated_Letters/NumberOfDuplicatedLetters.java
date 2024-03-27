@@ -65,7 +65,7 @@ class NumberOfDuplicatedLetters {
 //            if (!map.containsKey(ch)) {
 //                map.put(ch, 1);
 //            } else {
-//                map.put(ch, map.get(ch) + 1);
+//                map.put(ch, map.get(ch) + 1); // i++
 //            }
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }

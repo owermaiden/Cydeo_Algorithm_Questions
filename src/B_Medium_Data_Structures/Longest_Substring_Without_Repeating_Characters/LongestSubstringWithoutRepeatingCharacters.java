@@ -37,6 +37,9 @@ Constraints:
 https://leetcode.com/problems/longest-substring-without-repeating-characters/
          */
 
+    public static void main(String[] args) {
+        System.out.println(withStringBuilder("abcabcbb"));
+    }
     public static int withNestedLoop(String s) {
         int n = s.length();
         int max = 0;
@@ -74,7 +77,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
         return max;
     }
 
-
+    // abcabc
     static int withMap(String s) {
         Map<Character, Integer> map = new HashMap<>();
         int n = s.length();
@@ -123,6 +126,10 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
             if (!sub.toString().contains(ch + "")) {
                 sub.append(ch);
                 max = Math.max(max, sub.length());
+                String x = sub.substring(0) + 'a';
+                System.out.println(x);
+                StringBuilder a = new StringBuilder(x);
+                System.out.println(a);
             } else {
                 sub = new StringBuilder(sub.substring(sub.toString().indexOf(ch) + 1) + ch);
             }
@@ -159,4 +166,5 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
         return longest;
     }
+
 }

@@ -8,10 +8,12 @@ public class ArrayOfProducts {
         int[] givenArray = {1,1};
         System.out.println(Arrays.toString(productExceptSelf(givenArray)));
 
-        System.out.println(Arrays.toString(productArrayBruteForce(new int[]{1, 2, 3, 4})));
-        System.out.println(Arrays.toString(productArray1(new int[]{1, 2, 3, 4})));
-        System.out.println(Arrays.toString(productArray2(new int[]{1, 2, 3, 4})));
-        System.out.println(Arrays.toString(productArray3(new int[]{1, 2, 3, 4})));
+//        System.out.println(Arrays.toString(productArrayBruteForce(new int[]{1, 2, 3, 4})));
+//        System.out.println(Arrays.toString(productArray1(new int[]{1, 2, 3, 4})));
+//        System.out.println(Arrays.toString(productArray2(new int[]{1, 2, 3, 4})));
+//        System.out.println(Arrays.toString(productArray3(new int[]{1, 2, 3, 4})));
+//        System.out.println(Arrays.toString(newSolution(new int[]{1, 2, 3, 4})));
+        System.out.println(Arrays.toString(newSolution2(new int[]{1, 2, 3, 4})));
     }
 
 //    public static int[] productsOfOthers(int[] nums) {
@@ -88,6 +90,31 @@ public class ArrayOfProducts {
         return result;
     }
 
+    public static int[] newSolution(int[] nums){
+        int[] result = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            int[] temp = new int[nums.length - 1];
+            int k = 0;
+            for (int j = 0; j < nums.length; j++) {
+                if (i == j) continue;
+                temp[k++] = nums[j];
+            }
+            result[i] = Arrays.stream(temp).reduce(1, (x,y) -> x * y);
+        }
+        return result;
+    }
+
+    public static int[] newSolution2(int[] nums){
+        int[] result = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            int finalI = i;
+            result[i] = Arrays.stream(nums)
+                    .filter(num -> nums[finalI] != num)
+                    .reduce(1, (x,y) -> x * y);
+        }
+        return result;
+    }
+
     public static int[] productArray1(int[] nums) {
         int[] left = new int[nums.length];
         int[] right = new int[nums.length];
@@ -132,6 +159,8 @@ public class ArrayOfProducts {
 
         return res;
     }
+
+
 
     public static int[] productArray3(int[] nums) {
         int[] product = new int[nums.length];

@@ -39,13 +39,13 @@ Constraints:
 
 https://leetcode.com/problems/plus-one/
      */
-//    public static void main(String[] args) {
-//        int[] digits = {4, 3, 2, 1};
-////        int[] digits = {9};
-////        int[] digits = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-////        int[] digits = {7, 2, 8, 5, 0, 9, 1, 2, 9, 5, 3, 6, 6, 7, 3, 2, 8, 4, 3, 7, 9, 5, 7, 7, 4, 7, 4, 9, 4, 7, 0, 1, 1, 1, 7, 4, 0, 0, 6};
-//        System.out.println(Arrays.toString(withBigInteger(digits)));
-//    }
+    public static void main(String[] args) {
+        int[] digits = {4, 3, 2, 1};
+//        int[] digits = {9};
+//        int[] digits = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+//        int[] digits = {7, 2, 8, 5, 0, 9, 1, 2, 9, 5, 3, 6, 6, 7, 3, 2, 8, 4, 3, 7, 9, 5, 7, 7, 4, 7, 4, 9, 4, 7, 0, 1, 1, 1, 7, 4, 0, 0, 6};
+        System.out.println(Arrays.toString(withBigInteger3(digits)));
+    }
 
 
 
@@ -95,6 +95,16 @@ https://leetcode.com/problems/plus-one/
         BigInteger num2 =  new BigInteger(number.toString());
         num2 = num2.add(BigInteger.ONE);
         return num2.toString().chars().map(n -> n - '0').toArray();
+    }
+
+    static int[] withBigInteger3(int[] digits) {
+        StringBuilder number = new StringBuilder();
+        for (int eachNum : digits) {
+            number.append(eachNum);
+        }
+
+        int num2 = Integer.parseInt(number.toString()) + 1;
+        return Integer.toString(num2).chars().map(Character::getNumericValue).toArray();
     }
 
     public static int[] withStream(int[] digits) {

@@ -1,5 +1,9 @@
 package B_Medium_Data_Structures.Maximum_Sum_of_K_Consecutive_Elements;
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+
 public class MaximumSumofKConsecutiveElements {
 
     /*
@@ -12,6 +16,7 @@ public class MaximumSumofKConsecutiveElements {
         int k = 5;
         System.out.println(withNestedLoop(nums, k));
         System.out.println(withSlidingWindow(nums, k));
+        System.out.println(withArrayDeque(nums, k));
     }
 
     /*
@@ -58,6 +63,22 @@ public class MaximumSumofKConsecutiveElements {
             maxSum = Math.max(maxSum, currentSum);
         }
         return maxSum;
+    }
+
+    public static int withArrayDeque(int[] nums, int k){
+        Deque<Integer> deque = new ArrayDeque<>();
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            deque.add(nums[i]);
+            if (deque.size() == k){
+                max = Math.max(deque.stream().reduce(0, Integer::sum), max);
+                deque.removeFirst();
+            }
+        }
+
+        return max;
+
+
     }
 
 }

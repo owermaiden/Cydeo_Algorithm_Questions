@@ -1,9 +1,6 @@
 package B_Medium_Data_Structures.Longest_Substring_Without_Repeating_Characters;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
@@ -38,7 +35,24 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
          */
 
     public static void main(String[] args) {
-        System.out.println(withStringBuilder("abcabcbb"));
+        System.out.println(withStringBuilder("pwwkew"));
+        System.out.println(withSlidingWindow("bbbbb"));
+    }
+
+    public static int withSlidingWindow(String given){
+        Deque<Character> deque = new ArrayDeque<>();
+        int max =0;
+        for (int i = 0; i < given.length(); i++) {
+            if (!deque.contains(given.charAt(i))){
+                deque.add(given.charAt(i));
+            } else {
+                max = Math.max(deque.size(), max);
+                deque.removeFirst();
+
+            }
+
+        }
+        return max;
     }
     public static int withNestedLoop(String s) {
         int n = s.length();
@@ -127,9 +141,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
                 sub.append(ch);
                 max = Math.max(max, sub.length());
                 String x = sub.substring(0) + 'a';
-                System.out.println(x);
                 StringBuilder a = new StringBuilder(x);
-                System.out.println(a);
             } else {
                 sub = new StringBuilder(sub.substring(sub.toString().indexOf(ch) + 1) + ch);
             }
